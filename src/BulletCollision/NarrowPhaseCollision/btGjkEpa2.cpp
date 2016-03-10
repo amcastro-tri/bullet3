@@ -41,21 +41,21 @@ namespace gjkepa2_impl
 
 	/* GJK	*/ 
 #define GJK_MAX_ITERATIONS	128
-#define GJK_ACCURARY		((btScalar)0.0001)
-#define GJK_MIN_DISTANCE	((btScalar)0.0001)
-#define GJK_DUPLICATED_EPS	((btScalar)0.0001)
+#define GJK_ACCURARY		((btScalar)1e-12)
+#define GJK_MIN_DISTANCE	((btScalar)1e-12)
+#define GJK_DUPLICATED_EPS	((btScalar)1e-12)
 #define GJK_SIMPLEX2_EPS	((btScalar)0.0)
 #define GJK_SIMPLEX3_EPS	((btScalar)0.0)
 #define GJK_SIMPLEX4_EPS	((btScalar)0.0)
 
 	/* EPA	*/ 
-#define EPA_MAX_VERTICES	64
+#define EPA_MAX_VERTICES	128
 #define EPA_MAX_FACES		(EPA_MAX_VERTICES*2)
 #define EPA_MAX_ITERATIONS	255
-#define EPA_ACCURACY		((btScalar)0.0001)
+#define EPA_ACCURACY		((btScalar)1e-12)
 #define EPA_FALLBACK		(10*EPA_ACCURACY)
-#define EPA_PLANE_EPS		((btScalar)0.00001)
-#define EPA_INSIDE_EPS		((btScalar)0.01)
+#define EPA_PLANE_EPS		((btScalar)1e-14)
+#define EPA_INSIDE_EPS		((btScalar)1e-9)
 
 
 	// Shorthands
