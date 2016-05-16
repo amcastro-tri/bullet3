@@ -200,6 +200,7 @@ SET(BulletExampleBrowser_SRCS
 	../Benchmarks/landscapeData.h
 	../Benchmarks/TaruData
 	../Raycast/RaytestDemo.cpp
+	../Raycast/RayCastBug.cpp
 		../Importers/ImportBsp/BspConverter.h
  	../Importers/ImportBullet/SerializeSetup.cpp
 	../Importers/ImportBullet/SerializeSetup.h

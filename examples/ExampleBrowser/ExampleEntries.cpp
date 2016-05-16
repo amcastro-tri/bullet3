@@ -34,6 +34,7 @@
 #include "../Vehicles/Hinge2Vehicle.h"
 #include "../Importers/ImportBullet/SerializeSetup.h"
 #include "../Raycast/RaytestDemo.h"
+#include "../Raycast/RayCastBug.h"
 #include "../FractureDemo/FractureDemo.h"
 #include "../DynamicControlDemo/MotorDemo.h"
 #include "../RollingFrictionDemo/RollingFrictionDemo.h"
@@ -225,8 +226,8 @@ static ExampleEntry gDefaultExamples[]=
 	ExampleEntry(0,"Raycast"),
 	ExampleEntry(1,"Raytest", "Cast rays using the btCollisionWorld::rayTest method. The example shows how to receive the hit position and normal along the ray against the first object. Also it shows how to receive all the hits along a ray.", RaytestCreateFunc),
 	ExampleEntry(1,"Raytracer","Implement an extremely simple ray tracer using the ray trace functionality in btCollisionWorld.", 
-					RayTracerCreateFunc),
-					
+					RayTracerCreateFunc),	
+	ExampleEntry(1,"RayCastBug", "Cast rays using the btCollisionWorld::rayTest method. This reproduces the bug found in Drake reported in issue #1712 in Github.", RayCastBugCreateFunc),				
 	
 
 	ExampleEntry(0,"Experiments"),
